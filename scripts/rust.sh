@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+if [ -x .toolchain/cargo/bin/cargo ]; then
+  export CARGO_HOME="$PWD/.toolchain/cargo"
+  export RUSTUP_HOME="$PWD/.toolchain/rustup"
+  export PATH="$CARGO_HOME/bin:$PATH"
+fi
+cd src-tauri
+exec cargo "$@"

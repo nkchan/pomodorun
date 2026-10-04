@@ -1,0 +1,1 @@
+{"identifier":"main","description":"Local popup window only","windows":["main"],"permissions":["core:default","core:window:allow-hide"]}

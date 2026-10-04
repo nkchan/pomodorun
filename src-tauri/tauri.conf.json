@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Pomodorun",
+  "version": "0.1.0",
+  "identifier": "dev.pomodorun.app",
+  "build": { "beforeDevCommand": "npm run dev", "devUrl": "http://127.0.0.1:1420", "beforeBuildCommand": "npm run build", "frontendDist": "../dist" },
+  "app": {
+    "windows": [{ "label": "main", "title": "Pomodorun", "width": 360, "height": 620, "resizable": false, "decorations": false, "visible": false, "alwaysOnTop": true, "skipTaskbar": true }],
+    "security": { "csp": "default-src 'self'; connect-src ipc: http://ipc.localhost; img-src 'self' asset: http://asset.localhost data:; style-src 'self' 'unsafe-inline'" }
+  },
+  "bundle": { "active": true, "targets": ["app"], "icon": ["icons/icon.png", "icons/icon.icns"], "macOS": { "minimumSystemVersion": "13.0", "infoPlist": "Info.plist" } }
+}
