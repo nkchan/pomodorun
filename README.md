@@ -3,6 +3,8 @@
 日本語UIのmacOSメニューバー常駐ポモドーロアプリ。タスク・Brain Dump・Slack Focus Guardをローカル中心に提供します。
 Apple Silicon、macOS 13以降向け。サーバー・課金・ライセンス認証はありません。
 
+今後の実機検証・安定化・Developer ID署名／公証済み配布版の計画は [ROADMAP.md](ROADMAP.md) を参照してください。
+
 ## 起動
 
 生成したアプリ:
